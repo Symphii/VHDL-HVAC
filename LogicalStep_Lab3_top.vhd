@@ -184,7 +184,7 @@ inst5: HVAC port map(HVAC_SIM, clk_in, run, increase, decrease, current_temp);
 inst6: multiplexer_2_to_1 port map(desired_temp, vacation_temp, vacation_mode, mux_temp);
 inst7: PB_Inverters port map(pb_in, pb_out);
 inst8: Energy_Monitor port map(AGTB, AEQB, ALTB, vacation_mode, MC_test_mode, window_open, door_open, leds(0), leds(1), leds(2), leds(3), leds(4), leds(5), leds(7), run, increase, decrease);
-inst9: Tester port map(MC_test_mode, AEQB, AGTB, ALTB, desired_temp, current_temp, leds(6));
+inst9: Tester port map(MC_test_mode, AEQB, AGTB, ALTB, mux_temp, current_temp, leds(6));
 -- inst10: Bidir_shift_reg port map(clk_in, NOT(pb_n(0)), sw(0), sw(1), leds(7 downto 0));
 -- inst11: U_D_Bin_Counter8Bit port map(clk_in, NOT(pb_n(0)), sw(0), sw(1), leds(7 downto 0));
 
