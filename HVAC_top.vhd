@@ -2,7 +2,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 
-entity LogicalStep_Lab3_top is port (
+entity HVAC_top is port (
 	clkin_50		: in 	std_logic;
 	pb_n			: in	std_logic_vector(3 downto 0);
  	sw   			: in  std_logic_vector(7 downto 0); 	
@@ -17,9 +17,9 @@ entity LogicalStep_Lab3_top is port (
 	seg7_char2  : out	std_logic				    		-- seg7 digit2 selector
 	
 ); 
-end LogicalStep_Lab3_top;
+end HVAC_top;
 
-architecture design of LogicalStep_Lab3_top is
+architecture design of HVAC_top is
 --
 -- Provided Project Components Used
 ------------------------------------------------------------------- 
